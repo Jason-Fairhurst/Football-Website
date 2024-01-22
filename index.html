@@ -10,49 +10,70 @@
 </head>
 
 <body>
-    <header>
-        <nav class="topnav" id="myTopnav">
-            <a href="#" class="logo">Football</a>
-            <a href="#" class="navlink news">News</a>
-            <a href="#" class="navlink contact">Contact</a>
-            <div class="dropdown">
-                <button class="dropbtn">Leagues
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#" class="sunday">Sunday</a>
-                    <a href="#" class="monday">Monday</a>
-                    <a href="#" class="tuesday">Tuesday</a>
-                    <a href="#" class="wednesday">Wednesday</a>
-                    <a href="#" class="thursday">Thursday</a>
+    <div class="minContent">
+        <header>
+            <div class="maxContent">
+                <nav class="topnav" id="myTopnav">
+                    <a href="#" class="logo">Company Name</a>
+                    <a href="#" class="navlink news">News</a>
+                    <a href="#" class="navlink contact">Contact</a>
+                    <div class="dropdown">
+                        <button onclick="dropdown()" class="dropbtn">Leagues
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div id="leagueDropdown" class="dropdown-content">
+                            <a href="#" class="sunday">Sunday</a>
+                            <a href="#" class="monday">Monday</a>
+                            <a href="#" class="tuesday">Tuesday</a>
+                            <a href="#" class="wednesday">Wednesday</a>
+                            <a href="#" class="thursday">Thursday</a>
+                        </div>
+                    </div>
+                    <a href="#" class="navlink">About</a>
+                    <a href="javascript:void(0);" class="icon" onclick="mobileDropdown()">&#9776;</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="maxContent">
+                <div>
+                    <img src="./images/astro.jpg" alt="Picture of football pitches" class="homePicture">
                 </div>
             </div>
-            <a href="#" class="navlink">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
-    </header>
+        </main>
 
-    <main>
-        <section>
-            <img src="./images/astro.jpg" alt="Picture of football pitches">
-        </section>
-    </main>
+        <footer>
+            <div class="maxContent footer-content">
+                <h1 class="logo">Company Name</h1>
+                <div class="Footer-resource-links">
+                    <div>
+                        <a href="#" class="Footer-links">
+                            <div class="Footer-text_logo">
+                                <p>About Us</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="Footer-links">
+                            <div class="Footer-text_logo">
+                                <p>Contact Us</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="Footer-links">
+                            <div class="Footer-text_logo">
+                                <p>Advertising & Partnerships</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-    <footer>
-
-    </footer>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
-
+    <script src="myscripts.js"></script>
 </body>
 
 </html>
