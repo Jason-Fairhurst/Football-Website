@@ -3,25 +3,4 @@
 @import "./Layout/header.scss";
 @import "./Layout/nav.scss";
 @import "./Layout/footer.scss";
-
-body {
-    background: #ddd;
-}
-
-p {
-    margin: 0;
-}
-
-.logo {
-    display: block;
-    font-size: 17px;
-}
-
-img {
-    object-fit: cover;
-    width: 100%;
-    height: 280px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-}
+@import "./Pages/home.scss";

@@ -1,74 +1,89 @@
 footer {
     background-color: $secondary-bg;
-}
 
-.footer-content {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: end;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    gap: 60px;
+    .footer-content {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: end;
+        padding: 30px 20px;
+        gap: 60px;
 
-}
+    }
 
-.logo {
-    min-width: 138px;
-    max-width: 138px;
-    font-family: 'Shrikhand', serif;
-    margin: 0px;
-    padding: 0px;
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: left;
-}
+    .logoSocials {
+        display: flex;
+        flex-direction: column;
+        max-width: 160px;
+        min-width: 160px;
+        gap: 5px;
 
-a {
-    text-decoration: none;
-    color: white;
-}
+        .socialLinks {
+            display: flex;
+            flex-direction: row;
 
-.Footer-resource-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 20px;
+            .media {
+                max-width: 40px;
+                min-width: 40px;
+                max-height: 40px;
+                min-height: 40px;
+            }
+        }
+    }
 
-}
+    .logo {
+        margin: auto;
+        min-width: 138px;
+        max-width: 138px;
+        padding: 0px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+    }
 
-.Footer-links {
-    width: auto;
-    display: inline-block;
-}
+    a {
+        text-decoration: none;
+        color: white;
+    }
 
-.Footer-text_logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 11px;
+    .Footer-resource-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding-bottom: 10px;
+        gap: 20px;
 
-    img {
-        height: 13px;
+    }
+
+    .Footer-links {
+        width: auto;
+        display: inline-block;
+    }
+
+    .Footer-text_logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 11px;
     }
 }
 
 
-
-
-/******* Desktop layout *******/
+/******* Mobile layout *******/
 @media screen and (max-width: 769px) {
 
-    .footer-content {
-        padding: 22px 25px;
-        display: grid;
-        gap: 16px;
-
-        .Footer-resource-links {
+    footer {
+        .footer-content {
+            padding: 22px 25px;
             display: grid;
-            align-items: center;
-            gap: 7px;
-        }
+            gap: 16px;
 
+            .Footer-resource-links {
+                display: grid;
+                align-items: center;
+                gap: 7px;
+            }
+
+        }
     }
 }
