@@ -98,6 +98,16 @@
     }
 }
 
+
+/******* Desktop layout *******/
+@media screen and (min-width: 600px) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+
+/******* Mobile layout *******/
 @media screen and (max-width: 600px) {
 
     .topnav.responsive {
