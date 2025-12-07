@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="minContent">
+        <header>
+            <div class="maxContent">
+                <nav class="topnav" id="myTopnav">
+                    <a href="./index.html" class="logo">Company Name</a>
+                    <a href="./index.html" class="navlink news">News</a>
+                    <a href="./Contact.html" class="navlink contact navActive">Contact</a>
+                    <div class="dropdown">
+                        <button onclick="dropdown()" class="dropbtn">Leagues
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div id="leagueDropdown" class="dropdown-content">
+                            <a href="#" class="sunday">Sunday</a>
+                            <a href="#" class="monday">Monday</a>
+                            <a href="#" class="tuesday">Tuesday</a>
+                            <a href="#" class="wednesday">Wednesday</a>
+                            <a href="#" class="thursday">Thursday</a>
+                        </div>
+                    </div>
+                    <a href="#" class="navlink">About</a>
+                    <a href="javascript:void(0);" class="icon" onclick="mobileDropdown()">&#9776;</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="maxContent">
+                <div>
+                    <img src="./images/WembleyStadiumCropped.jpg" alt="Picture of Wembley stadium" class="homePicture">
+                </div>
+
+                <div class="container">
+                    <form action="action_page.php">
+
+                        <label for="fullname">Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Your name..">
+
+                        <label for="locationEnquire">Location</label>
+                        <select id="locationEnquire" name="locationEnquire">
+                            <option value="Birmingham">Birmingham</option>
+                            <option value="London">London</option>
+                            <option value="Manchester">Manchester</option>
+                        </select>
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:10vw"></textarea>
+
+                        <input type="submit" value="Submit">
+
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="maxContent footer-content">
+                <div class="logoSocials">
+                    <h1 class="logo">Company Name</h1>
+                    <div class="socialLinks">
+                        <a href="#">
+                            <img src="./images/Instagram logo.png" alt="Instagram" class="media">
+                        </a>
+                        <a href="#">
+                            <img src="./images/Facebook logo.png" alt="Facebook" class="media">
+                        </a>
+                        <a href="#">
+                            <img src="./images/X logo.png" alt="X (formerly Twitter)" class="media">
+                        </a>
+                        <a href="#">
+                            <img src="./images/TikTok logo.png" alt="TikTok" class="media">
+                        </a>
+                    </div>
+                </div>
+                <div class="Footer-resource-links">
+                    <div>
+                        <a href="#" class="Footer-links">
+                            <div class="Footer-text_logo">
+                                <p>About Us</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./Contact.html" class="Footer-links">
+                            <div class="Footer-text_logo">
+                                <p>Contact Us</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="Footer-links">
+                            <div class="Footer-text_logo">
+                                <p>Advertising & Partnerships</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="myscripts.js"></script>
+</body>
+
+</html>

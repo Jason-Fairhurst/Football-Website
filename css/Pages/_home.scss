@@ -10,7 +10,7 @@
 .newsSection {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin: 35px 5%;
+    margin: 20px 4%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .25);
@@ -87,12 +87,21 @@
     }
 }
 
+@media screen and (max-width: 1440px) {
+    .homePicture {
+        height: 19vw;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 
-/******* Mobile layout *******/
+}
+
+/*****Mobile layout******/
 @media screen and (max-width: 769px) {
     .newsSection {
         display: flex;
         flex-direction: column;
+        margin: 3vw 3vw;
 
         .newsGroup {
             height: auto;
@@ -102,6 +111,10 @@
             height: auto;
 
         }
+    }
+
+    .homePicture {
+        height: 22vw;
     }
 
 }
