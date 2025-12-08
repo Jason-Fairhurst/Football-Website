@@ -6,6 +6,11 @@ function mobileDropdown() {
     } else {
         x.className = "topnav";
     }
+
+    for (var i = 1; i <= 3; i++){
+        var bar = document.getElementsByClassName(`mobileBar${i}`)[0];
+        bar.classList.toggle("change");
+    } 
 }
 
 //Dropdown shows when clicked

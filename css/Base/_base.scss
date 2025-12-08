@@ -3,23 +3,28 @@ body {
     font-family: Arial;
 }
 
+.maxContent {
+    max-width: 1920px;
+    margin: auto;
+}
+
 .minContent {
     min-width: 360px;
 }
 
-header, footer {
+header,
+footer {
     .maxContent {
         max-width: 1920px;
         margin: auto;
     }
 }
 
-main {
-    .maxContent {
-        max-width: 1440px;
-        margin: auto;
-    }
+.maxContentMain {
+    max-width: 1440px;
+    margin: auto;
 }
+
 
 p {
     margin: 0;

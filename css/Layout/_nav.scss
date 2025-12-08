@@ -20,7 +20,7 @@
     .navlink {
         @include navbuttons;
         display: block;
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .icon {
@@ -54,6 +54,31 @@
             text-align: left;
         }
 
+    }
+
+    .container {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .mobileBar1,
+    .mobileBar2,
+    .mobileBar3 {
+        width: 21px;
+        height: 3px;
+        background-color: #fff;
+        margin: 3px 0;
+        transition: .4s;
+    }
+
+    .change.mobileBar1 {
+        transform: translate(0, 6px) rotate(-45deg);
+    }
+    .change.mobileBar2 {
+        opacity: 0;
+    }
+    .change.mobileBar3 {
+        transform: translate(0, -6px) rotate(45deg);
     }
 
 }
@@ -123,6 +148,7 @@
             float: none;
             display: block;
             text-align: left;
+
         }
 
         .dropdown {
