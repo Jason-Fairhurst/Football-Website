@@ -15,6 +15,7 @@
 
     .navActive {
         background-color: $primary-bg;
+        color: white !important;
     }
 
     .navlink {
@@ -43,6 +44,9 @@
             font-family: inherit;
             margin: 0;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 2px;
         }
 
         &-content a {
@@ -52,6 +56,10 @@
             text-decoration: none;
             display: block;
             text-align: left;
+        }
+
+        button span {
+            pointer-events: none;
         }
 
     }
@@ -74,9 +82,11 @@
     .change.mobileBar1 {
         transform: translate(0, 6px) rotate(-45deg);
     }
+
     .change.mobileBar2 {
         opacity: 0;
     }
+
     .change.mobileBar3 {
         transform: translate(0, -6px) rotate(45deg);
     }
@@ -113,7 +123,7 @@
 @media screen and (max-width: 600px) {
 
     .topnav a:not(:nth-child(1)),
-    .dropdown .dropbtn {
+    .topnav .dropdown .dropbtn {
         display: none;
     }
 
@@ -156,7 +166,8 @@
         }
 
         .dropbtn {
-            display: block;
+            display: flex;
+            align-items: center;
             width: 100%;
             text-align: left;
         }

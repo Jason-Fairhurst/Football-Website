@@ -12,22 +12,22 @@
 <body>
     <div class="minContent">
         <header>
-            <div class="maxContent">
+            <div class="maxContentMain">
                 <nav class="topnav" id="myTopnav">
-                    <a href="./index.html" class="logo">Company Name</a>
-                    <a href="./index.html" class="navlink news">News</a>
+                    <a href="./index.html" class="navlink logo">Company Name</a>
+                    <a href="./index.html" class="navlink home">Home</a>
                     <a href="./Contact.html" class="navlink contact navActive">Contact</a>
                     <div class="dropdown">
-                        <button onclick="dropdown()" class="dropbtn">Leagues
-                            <i class="fa fa-caret-down"></i>
+                        <button onclick="dropdown()" class="dropbtn">Leagues <span
+                                style="font-size: 12px;">&#9660;</span>
                         </button>
                         <div id="leagueDropdown" class="dropdown-content">
                             <a href="#" class="Birmingham">Birmingham</a>
                             <a href="#" class="London">London</a>
-                            <a href="#" class="Manchester">Manchester</a>
+                            <a href="./ManchesterLeague.html" class="Manchester">Manchester</a>
                         </div>
                     </div>
-                    <a href="#" class="navlink">About</a>
+                    <a href="./News.html" class="navlink news">News</a>
                     <a href="javascript:void(0);" class="icon" onclick="mobileDropdown()">
                         <div class="mobileBar1"></div>
                         <div class="mobileBar2"></div>
@@ -40,7 +40,7 @@
         <main>
             <div class="maxContent">
                 <div>
-                    <img src="./images/WembleyStadiumCropped.jpg" alt="Picture of Wembley stadium" class="homePicture">
+                    <img src="./images/WembleyStadium.jpg" alt="Picture of Wembley stadium" class="homePicture">
                 </div>
 
                 <div class="container">
@@ -68,9 +68,9 @@
         </main>
 
         <footer>
-            <div class="maxContent footer-content">
+            <div class="maxContentMain footer-content">
                 <div class="logoSocials">
-                    <h1 class="logo">Company Name</h1>
+                    <h1 class="logo"><a href="index.html">Company Name</a></h1>
                     <div class="socialLinks">
                         <a href="#">
                             <img src="./images/Instagram logo.png" alt="Instagram" class="media">

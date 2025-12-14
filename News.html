@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="minContent maxContent">
+        <header>
+            <div class="maxContentMain">
+                <nav class="topnav" id="myTopnav">
+                    <a href="./index.html" class="navlink logo">Company Name</a>
+                    <a href="./index.html" class="navlink home">Home</a>
+                    <a href="./Contact.html" class="navlink contact">Contact</a>
+                    <div class="dropdown">
+                        <button onclick="dropdown()" class="dropbtn">Leagues <span
+                                style="font-size: 12px;">&#9660;</span>
+                        </button>
+                        <div id="leagueDropdown" class="dropdown-content">
+                            <a href="#" class="Birmingham">Birmingham</a>
+                            <a href="#" class="London">London</a>
+                            <a href="./ManchesterLeague.html" class="Manchester">Manchester</a>
+                        </div>
+                    </div>
+                    <a href="./News.html" class="navlink news navActive">News</a>
+                    <a href="javascript:void(0);" class="icon" onclick="mobileDropdown()">
+                        <div class="mobileBar1"></div>
+                        <div class="mobileBar2"></div>
+                        <div class="mobileBar3"></div>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div>
+                <img src="./images/WembleyStadium.jpg" alt="Picture of Wembley stadium" class="homePicture">
+            </div>
+            <div class="maxContentMain">
+                <div class="newsSection">
+                    <img src="./images/astro.jpg" alt="" class="newsImg">
+                    <div class="newsGroup">
+                        <article class="newsArticle">
+                            <a href="#" class="newsLinks">
+                                <img src="./images/astro.jpg" alt="" class="newsArticleImg">
+                                <div class="newsContent">
+                                    <h3 class="newsTitle">Price Change</h3>
+                                    <div class="newsDate">
+                                        <p class="publishDate">August 16, 2023</p>
+                                        <p>Read more...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="newsArticle">
+                            <a href="#" class="newsLinks">
+                                <img src="./images/FootballBoots.jpg" alt="" class="newsArticleImg">
+                                <div class="newsContent">
+                                    <h3 class="newsTitle">Wednesday League - Update</h3>
+                                    <div class="newsDate">
+                                        <p class="publishDate">June 26, 2023</p>
+                                        <p>Read more...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="newsArticle">
+                            <a href="#" class="newsLinks">
+                                <img src="./images/FootballChangingRoom.jpg" alt="" class="newsArticleImg">
+                                <div class="newsContent">
+                                    <h3 class="newsTitle">Fight To Stay a Fiver!</h3>
+                                    <div class="newsDate">
+                                        <p class="publishDate">June 15, 2023</p>
+                                        <p>Read more...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="newsArticle">
+                            <a href="#" class="newsLinks">
+                                <img src="./images/FootballPitch.jpg" alt="" class="newsArticleImg">
+                                <div class="newsContent">
+                                    <h3 class="newsTitle">New Sunday League</h3>
+                                    <div class="newsDate">
+                                        <p class="publishDate">February 28, 2023</p>
+                                        <p>Read more...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="newsArticle">
+                            <a href="#" class="newsLinks">
+                                <img src="./images/astro.jpg" alt="" class="newsArticleImg">
+                                <div class="newsContent">
+                                    <h3 class="newsTitle">New Tuesday and Sunday Leagues</h3>
+                                    <div class="newsDate">
+                                        <p class="publishDate">January 24, 2023</p>
+                                        <p>Read more...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <article class="currentNews">
+                        <h2>Price Change</h2>
+                        <p>Hi all, unfortunately the time has come.</p>
+                        <br>
+                        <p>From 1st September, for the very first time, we will be increasing the price of games
+                            from £5 per player to £6 per player.</p>
+                        <br>
+                        <p>Unfortunately, a fiver doesn’t get you as far as it used to, and purely from a survival point
+                            of view, this price increase is essential. The cost of footballs has nearly doubled since we
+                            started, and the referees have had two pay rises in the lifetime of the business. I can
+                            assure you that I don’t pay myself a huge salary!</p>
+                        <br>
+                        <p>We hope you understand the reasons, if you have any issues with this, please feel free to
+                            give me a shout.</p>
+                        <br>
+                        <p>Thanks,</p>
+                        <br>
+                        <p>John</p>
+                    </article>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="maxContentMain footer-content">
+                <div class="logoSocials">
+                    <h1 class="logo"><a href="index.html">Company Name</a></h1>
+                    <div class="socialLinks">
+                        <a href="#">
+                            <img src="./images/Instagram logo.png" alt="Instagram" class="media">
+                        </a>
+                        <a href="#">
+                            <img src="./images/Facebook logo.png" alt="Facebook" class="media">
+                        </a>
+                        <a href="#">
+                            <img src="./images/X logo.png" alt="X (formerly Twitter)" class="media">
+                        </a>
+                        <a href="#">
+                            <img src="./images/TikTok logo.png" alt="TikTok" class="media">
+                        </a>
+                    </div>
+                </div>
+                <div class="Footer-resource-links">
+                    <div>
+                        <a href="#" class="Footer-links">
+                            <div class="Footer-text_logo">
+                                <p>About Us</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./Contact.html" class="Footer-links">
+                            <div class="Footer-text_logo">
+                                <p>Contact Us</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="Footer-links">
+                            <div class="Footer-text_logo">
+                                <p>Advertising & Partnerships</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="myscripts.js"></script>
+</body>
+
+</html>

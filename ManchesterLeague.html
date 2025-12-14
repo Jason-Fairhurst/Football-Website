@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="minContent maxContent">
+        <header>
+            <div class="maxContentMain">
+                <nav class="topnav" id="myTopnav">
+                    <a href="./index.html" class="navlink logo">Company Name</a>
+                    <a href="./index.html" class="navlink home">Home</a>
+                    <a href="./Contact.html" class="navlink contact">Contact</a>
+                    <div class="dropdown">
+                        <button onclick="dropdown()" class="dropbtn">Leagues <span
+                                style="font-size: 12px;">&#9660;</span>
+                        </button>
+                        <div id="leagueDropdown" class="dropdown-content">
+                            <a href="#" class="Birmingham">Birmingham</a>
+                            <a href="#" class="London">London</a>
+                            <a href="./ManchesterLeague.html" class="Manchester navActive">Manchester</a>
+                        </div>
+                    </div>
+                    <a href="./News.html" class="navlink news">News</a>
+                    <a href="javascript:void(0);" class="icon" onclick="mobileDropdown()">
+                        <div class="mobileBar1"></div>
+                        <div class="mobileBar2"></div>
+                        <div class="mobileBar3"></div>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div>
+                <img src="./images/OldTrafford.jpg" alt="Picture of Old Trafford football stadium" class="homePicture">
+            </div>
+            <div class="maxContentMain">
+                
+            </div>
+        </main>
+
+        <footer>
+            <div class="maxContentMain footer-content">
+                <div class="logoSocials">
+                    <h1 class="logo"><a href="index.html">Company Name</a></h1>
+                    <div class="socialLinks">
+                        <a href="#">
+                            <img src="./images/Instagram logo.png" alt="Instagram" class="media">
+                        </a>
+                        <a href="#">
+                            <img src="./images/Facebook logo.png" alt="Facebook" class="media">
+                        </a>
+                        <a href="#">
+                            <img src="./images/X logo.png" alt="X (formerly Twitter)" class="media">
+                        </a>
+                        <a href="#">
+                            <img src="./images/TikTok logo.png" alt="TikTok" class="media">
+                        </a>
+                    </div>
+                </div>
+                <div class="Footer-resource-links">
+                    <div>
+                        <a href="#" class="Footer-links">
+                            <div class="Footer-text_logo">
+                                <p>About Us</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./Contact.html" class="Footer-links">
+                            <div class="Footer-text_logo">
+                                <p>Contact Us</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="Footer-links">
+                            <div class="Footer-text_logo">
+                                <p>Advertising & Partnerships</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="myscripts.js"></script>
+</body>
+
+</html>
