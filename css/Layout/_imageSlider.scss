@@ -1,0 +1,69 @@
+.homePicture {
+    object-fit: cover;
+    width: 100%;
+    height: 280px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1440px) {
+    .homePicture {
+        height: 19vw;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .homePicture {
+        height: 22vw;
+    }
+
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    32% {
+        transform: translateX(0);
+    }
+
+    37% {
+        transform: translateX(-100%);
+    }
+
+    64% {
+        transform: translateX(-100%);
+    }
+
+    69% {
+        transform: translateX(-200%);
+    }
+
+    96% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.slide-left {
+    animation-name: slide-left;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+}
+
+.mySlides {
+    min-width: 100%;
+}
+
+.slideshow-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
