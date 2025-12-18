@@ -1,4 +1,5 @@
 input[type=text],
+input[type=email],
 select,
 textarea {
     width: 100%;
@@ -24,6 +25,15 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+
+::placeholder {
+  color: rgb(170, 170, 170);
+  opacity: 1;
+}
+/*
+::-ms-input-placeholder {
+  color: red;
+}*/
 
 .container {
     border-radius: 5px;

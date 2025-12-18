@@ -35,7 +35,6 @@ footer {
         min-width: 138px;
         max-width: 138px;
         padding: 0px;
-        color: white;
         font-size: 18px;
         font-weight: 400;
         text-align: left;
@@ -43,7 +42,7 @@ footer {
 
     a {
         text-decoration: none;
-        color: white;
+        color: $headerFooterColor;
     }
 
     .Footer-resource-links {
